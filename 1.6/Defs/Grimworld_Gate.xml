@@ -14,6 +14,7 @@
 			<texPath>Furniture/Gate/2x1/HeavyGate_2x1_Mover</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.7,2.7)</drawSize>
 			<damageData>
 				<enabled>false</enabled>
 			</damageData>
@@ -73,6 +74,7 @@
 			<texPath>Furniture/Gate/3x1/HeavyGate_3x1_Mover</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3.8,3)</drawSize>
 			<damageData>
 				<enabled>false</enabled>
 			</damageData>
