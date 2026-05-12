@@ -106,7 +106,7 @@
 		</thingSetMakerTags>
 	</ThingDef>
 
-	<ThingDef ParentName="Bed">
+	<ThingDef ParentName="BedWithQualityBase">
 		<defName>GW_IF_MedicaeBed</defName>
 		<label>medicae bed</label>
 		<description>A medical bed, moderately equipped with medical paraphernalia for use by a trained medicae. Patients resting on it can look forward to improved medical outcomes. \n\nThose resting on this bed should consider themselves lucky. On some worlds of the Imperium, a man with an infected wound can only look forward to a crude amputation with a dirty bonesaw - and, probably, a slow death.</description>
@@ -118,7 +118,11 @@
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<graphicData>
 			<texPath>Furniture/Bed/Medicae/Bed_Medical</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
 		</graphicData>
+		<castEdgeShadows>True</castEdgeShadows>
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
 			<WorkToBuild>2800</WorkToBuild>
@@ -131,6 +135,13 @@
 			<SurgerySuccessChanceFactor>1.21</SurgerySuccessChanceFactor>
 			<BirthRitualQualityOffset MayRequire="Ludeon.RimWorld.Biotech">5.5</BirthRitualQualityOffset>
 		</statBases>
+		<size>(1,2)</size>
+		<stuffCategories>
+		  <li>Metallic</li>
+		  <li>Woody</li>
+		  <li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>45</costStuffCount>
 		<comps>
 		  <li Class="CompProperties_AffectedByFacilities">
 			<linkableFacilities>
@@ -148,6 +159,9 @@
 		  <buildingSizeCategory>Small</buildingSizeCategory>
 		  <paintable>true</paintable>
 		</building>
+		<fillPercent>0.4</fillPercent>
+		<pathCost>42</pathCost>
+		<staticSunShadowHeight>0.17</staticSunShadowHeight>
 	</ThingDef>
 
 	<!-- <ThingDef ParentName="Bed"> -->

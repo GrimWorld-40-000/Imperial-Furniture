@@ -50,6 +50,7 @@
 				<graphicClass>Graphic_Multi</graphicClass>
 				<drawSize>(3, 2)</drawSize>
 			</doorSupportGraphic>
+			<isAirtight>true</isAirtight> <!-- always metallic = airtight -->
 		</building>
 		<researchPrerequisites>
 			<li>GW_BlastDoors</li>
@@ -110,6 +111,7 @@
 				<graphicClass>Graphic_Multi</graphicClass>
 				<drawSize>(4, 2)</drawSize>
 			</doorSupportGraphic>
+			<isAirtight>true</isAirtight> <!-- always metallic = airtight -->
 		</building>
 		<researchPrerequisites>
 			<li>GW_BlastDoors</li>
